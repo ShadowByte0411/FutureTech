@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovations | CYBER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="glow-orb orb-1"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">CYBER<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="innovations.html" style="color: var(--primary);">Innovations</a></li>
+            <li><a href="visuals.html">Visuals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h1 class="hidden" style="text-align: center; margin-bottom: 3rem;">SYSTEM <span class="gradient-text">ARCHIVES</span></h1>
+        
+        <div class="tabs-container hidden delay-100">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-target="tab-1">
+                    <i class="fas fa-microchip"></i> Quantum Core
+                </button>
+                <button class="tab-btn" data-target="tab-2">
+                    <i class="fas fa-brain"></i> Neural AI
+                </button>
+                <button class="tab-btn" data-target="tab-3">
+                    <i class="fas fa-shield-alt"></i> Cyber Sec
+                </button>
+                <button class="tab-btn" data-target="tab-4">
+                    <i class="fas fa-vr-cardboard"></i> WebXR
+                </button>
+            </div>
+
+            <div class="tab-content-area">
+                
+                <div class="content-pane active" id="tab-1">
+                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1000&auto=format&fit=crop" alt="Quantum">
+                    <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">Quantum Processing</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">
+                        Utilizing qubits in superposition to solve complex algorithmic problems 1000x faster than traditional binary silicon chips.
+                    </p>
+                </div>
+
+                <div class="content-pane" id="tab-2">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop" alt="AI">
+                    <h2 style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;">Neural Networks</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">
+                        Self-evolving code structures that adapt to user behavior. Our AI architecture learns, predicts, and optimizes in real-time.
+                    </p>
+                </div>
+
+                <div class="content-pane" id="tab-3">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1000&auto=format&fit=crop" alt="Security">
+                    <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">Military Encryption</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">
+                        End-to-end decentralized blockchain security ensures that data integrity is never compromised by external threats.
+                    </p>
+                </div>
+
+                 <div class="content-pane" id="tab-4">
+                    <img src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?q=80&w=1000&auto=format&fit=crop" alt="VR">
+                    <h2 style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;">Immersive WebXR</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">
+                        Blurring the line between digital and physical. Browser-based augmented reality without the need for external apps.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
