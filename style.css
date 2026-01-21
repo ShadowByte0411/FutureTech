@@ -1,4 +1,3 @@
-/* --- 1. VARIABLES & THEME --- */
 :root {
     --bg: #030305;
     --text: #ffffff;
@@ -10,7 +9,7 @@
     --font-main: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-/* --- 2. RESET & BASE --- */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -20,12 +19,10 @@ body {
     overflow-x: hidden;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--secondary); border-radius: 4px; }
 
-/* --- 3. BACKGROUND EFFECTS --- */
 .bg-grid {
     position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
     background-image: linear-gradient(rgba(0, 243, 255, 0.1) 1px, transparent 1px),
@@ -41,7 +38,6 @@ body {
 .orb-1 { width: 500px; height: 500px; background: var(--primary); top: -200px; left: -200px; }
 .orb-2 { width: 600px; height: 600px; background: var(--secondary); bottom: -200px; right: -200px; }
 
-/* --- 4. NAVIGATION --- */
 .glass-nav {
     display: flex; justify-content: space-between; align-items: center;
     padding: 1.5rem 5%; position: fixed; width: 100%; top: 0;
@@ -55,7 +51,6 @@ body {
 .nav-links a:hover { color: var(--primary); text-shadow: 0 0 10px var(--primary); }
 .menu-toggle { display: none; color: white; font-size: 1.5rem; cursor: pointer; }
 
-/* --- 5. HERO & GENERAL LAYOUT --- */
 .hero { min-height: 100vh; display: flex; align-items: center; padding: 0 10%; margin-top: 60px; gap: 2rem; }
 .hero-content { flex: 1; z-index: 2; }
 .hero-visual { flex: 1; display: flex; justify-content: center; z-index: 2; }
@@ -73,19 +68,19 @@ h1 { font-size: 5rem; line-height: 1; font-weight: 800; margin-bottom: 1.5rem; }
 .btn-secondary { color: var(--text); border: 1px solid var(--glass-border); }
 .btn-secondary:hover { border-color: var(--secondary); color: var(--secondary); }
 
-/* --- 6. IMAGE SLIDER STYLES (UPDATED) --- */
+
 .tilt-card {
     position: relative;
     width: 100%;
     max-width: 500px;
-    height: 350px; /* Fixed height is required for absolute stacking */
+    height: 350px; 
     display: flex;
     justify-content: center;
     perspective: 1000px;
 }
 
 .hero-img {
-    position: absolute; /* Stacks images on top of each other */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -94,23 +89,20 @@ h1 { font-size: 5rem; line-height: 1; font-weight: 800; margin-bottom: 1.5rem; }
     border: 2px solid var(--primary);
     box-shadow: 0 0 50px rgba(0, 243, 255, 0.15);
     object-fit: cover;
-    opacity: 0; /* Hidden by default */
-    transition: opacity 1s ease-in-out; /* Smooth 1s fade */
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
 }
 
-/* This class is added by JS to show the current image */
 .hero-img.active {
     opacity: 1;
     z-index: 2;
 }
 
-/* Mobile Adjustment for Slider */
 @media (max-width: 968px) {
     .tilt-card {
-        height: 300px; /* Smaller height for mobile */
+        height: 300px; 
     }
 }
-/* --- 7. INNOVATIONS TABS (NEW SLIDING SYSTEM) --- */
 .tabs-container {
     display: flex;
     gap: 2rem;
@@ -193,19 +185,16 @@ h1 { font-size: 5rem; line-height: 1; font-weight: 800; margin-bottom: 1.5rem; }
     box-shadow: 0 0 30px rgba(0, 243, 255, 0.1);
 }
 
-/* --- 8. UTILITIES --- */
 .hidden { opacity: 0; transform: translateY(50px); transition: all 0.8s ease; }
 .show { opacity: 1; transform: translateY(0); }
 .delay-100 { transition-delay: 0.1s; }
 .delay-200 { transition-delay: 0.2s; }
 
-/* --- 9. MOBILE RESPONSIVE --- */
 @media (max-width: 968px) {
     .hero { flex-direction: column; text-align: center; margin-top: 100px; }
     .nav-links { display: none; }
     .menu-toggle { display: block; }
     
-    /* Responsive Tabs */
     .tabs-container { flex-direction: column; height: auto; }
     .tab-buttons { flex-direction: row; overflow-x: auto; padding: 1rem; }
     .tab-btn { min-width: 150px; padding: 1rem; font-size: 1rem; }
