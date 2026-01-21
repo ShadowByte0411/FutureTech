@@ -1,4 +1,3 @@
-// 1. SCROLL ANIMATIONS
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -8,8 +7,6 @@ const observer = new IntersectionObserver((entries) => {
 });
 document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
 
-
-// 2. INNOVATIONS TABS LOGIC (NEW)
 const tabs = document.querySelectorAll('.tab-btn');
 const contents = document.querySelectorAll('.content-pane');
 
@@ -28,9 +25,6 @@ tabs.forEach(tab => {
     });
 });
 
-// ... keep your existing Scroll and Tab code ...
-
-// 4. HERO IMAGE SLIDER (5 Seconds)
 const slides = document.querySelectorAll('.hero-img');
 let currentSlide = 0;
 
@@ -46,7 +40,7 @@ if (slides.length > 0) {
         slides[currentSlide].classList.add('active');
     }, 5000); // 5000ms = 5 seconds
 }
-// 3. MOBILE MENU
+
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
