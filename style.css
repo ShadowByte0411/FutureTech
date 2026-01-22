@@ -2,15 +2,20 @@
     --bg: #030305;
     --text: #ffffff;
     --text-muted: #94a3b8;
-    --primary: #00f3ff; /* Neon Cyan */
-    --secondary: #bd00ff; /* Electric Purple */
+    --primary: #00f3ff;
+    --secondary: #bd00ff;
     --glass: rgba(20, 20, 25, 0.6);
     --glass-border: rgba(255, 255, 255, 0.1);
     --font-main: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:
+    border-box;
+}
 
 body {
     background-color: var(--bg);
