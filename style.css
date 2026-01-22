@@ -24,12 +24,23 @@ body {
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--secondary); border-radius: 4px; }
+::-webkit-scrollbar { 
+    width: 8px;
+}
+::-webkit-scrollbar-track { 
+    background: var(--bg);
+}
+::-webkit-scrollbar-thumb { 
+    background: var(--secondary); 
+    border-radius: 4px;
+}
 
 .bg-grid {
-    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100vw; 
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 243, 255, 0.1) 1px, transparent 1px),
                       linear-gradient(90deg, rgba(189, 0, 255, 0.1) 1px, transparent 1px);
     background-size: 50px 50px; z-index: -2;
@@ -39,7 +50,13 @@ body {
 }
 @keyframes gridMove { 0% { background-position: 0 0; } 100% { background-position: 0 500px; } }
 
-.glow-orb { position: fixed; border-radius: 50%; filter: blur(150px); z-index: -1; opacity: 0.5; }
+.glow-orb { 
+    position: fixed;
+    border-radius: 50%; 
+    filter: blur(150px);
+    z-index: -1; 
+    opacity: 0.5;
+}
 .orb-1 { width: 500px; height: 500px; background: var(--primary); top: -200px; left: -200px; }
 .orb-2 { width: 600px; height: 600px; background: var(--secondary); bottom: -200px; right: -200px; }
 
