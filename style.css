@@ -207,20 +207,54 @@ h1 { font-size: 5rem; line-height: 1; font-weight: 800; margin-bottom: 1.5rem; }
     box-shadow: 0 0 30px rgba(0, 243, 255, 0.1);
 }
 
-.hidden { opacity: 0; transform: translateY(50px); transition: all 0.8s ease; }
-.show { opacity: 1; transform: translateY(0); }
+.hidden { 
+    opacity: 0; transform: translateY(50px);
+         transition: all 0.8s ease; 
+        }
+.show { 
+    opacity: 1; 
+       transform: translateY(0);
+}
 .delay-100 { transition-delay: 0.1s; }
 .delay-200 { transition-delay: 0.2s; }
 
 @media (max-width: 968px) {
-    .hero { flex-direction: column; text-align: center; margin-top: 100px; }
-    .nav-links { display: none; }
-    .menu-toggle { display: block; }
+    .hero { 
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px; 
+    }
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle { 
+        display: block; 
+    }
     
-    .tabs-container { flex-direction: column; height: auto; }
-    .tab-buttons { flex-direction: row; overflow-x: auto; padding: 1rem; }
-    .tab-btn { min-width: 150px; padding: 1rem; font-size: 1rem; }
-    .content-pane { position: relative; opacity: 1; transform: none; display: none; padding: 1rem; }
-    .content-pane.active { display: flex; animation: fadeIn 0.5s; }
+    .tabs-container { 
+        flex-direction: column; 
+                     height: auto;
+                    }
+    .tab-buttons {
+        flex-direction: row;
+        overflow-x: auto; 
+        padding: 1rem; 
+    }
+    .tab-btn { 
+        min-width: 150px;
+        padding: 1rem; 
+        font-size: 1rem; 
+    }
+    .content-pane {
+        position: relative;
+        opacity: 1;
+        transform: none;
+        display: none;
+        padding: 1rem;
+    }
+    .content-pane.active { 
+        display: flex;
+        animation: fadeIn 0.5s; 
+                         }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 }
