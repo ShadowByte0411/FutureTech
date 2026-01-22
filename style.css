@@ -83,10 +83,28 @@ h1 { font-size: 5rem; line-height: 1; font-weight: 800; margin-bottom: 1.5rem; }
 .section { padding: 6rem 10%; margin-top: 60px; }
 
 /* Buttons */
-.btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn { padding: 1rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none; transition: 0.3s; display: inline-block; }
-.btn-primary { background: transparent; color: var(--primary); border: 2px solid var(--primary); box-shadow: 0 0 15px rgba(0, 243, 255, 0.2); }
-.btn-primary:hover { background: var(--primary); color: #000; box-shadow: 0 0 40px rgba(0, 243, 255, 0.6); }
+.btn-group { 
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; }
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 700; 
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block; 
+}
+.btn-primary {
+    background: transparent;
+    color: var(--primary); 
+    border: 2px solid var(--primary); 
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+}
+.btn-primary:hover {
+    background: var(--primary);
+    color: #000; box-shadow: 0 0 40px rgba(0, 243, 255, 0.6);
+}
 .btn-secondary { color: var(--text); border: 1px solid var(--glass-border); }
 .btn-secondary:hover { border-color: var(--secondary); color: var(--secondary); }
 
