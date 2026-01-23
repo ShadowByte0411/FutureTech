@@ -56,6 +56,7 @@ body {
     z-index: -1; 
     opacity: 0.5;
 }
+
 .orb-1 { width: 500px; height: 500px; background: var(--primary); top: -200px; left: -200px; }
 .orb-2 { width: 600px; height: 600px; background: var(--secondary); bottom: -200px; right: -200px; }
 
