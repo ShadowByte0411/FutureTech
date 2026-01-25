@@ -274,5 +274,6 @@ h1 { font-size: 5rem; line-height: 1; font-weight: 800; margin-bottom: 1.5rem; }
         display: flex;
         animation: fadeIn 0.5s; 
                          }
+    
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 }
