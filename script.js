@@ -12,14 +12,11 @@ const contents = document.querySelectorAll('.content-pane');
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        // Remove active class from all tabs and contents
         tabs.forEach(t => t.classList.remove('active'));
         contents.forEach(c => c.classList.remove('active'));
 
-        // Add active class to clicked tab
         tab.classList.add('active');
 
-        // Show corresponding content
         const target = tab.getAttribute('data-target');
         document.getElementById(target).classList.add('active');
     });
@@ -30,15 +27,10 @@ let currentSlide = 0;
 
 if (slides.length > 0) {
     setInterval(() => {
-        // 1. Remove active class from current slide
         slides[currentSlide].classList.remove('active');
-
-        // 2. Calculate next slide index (loop back to 0 if at end)
         currentSlide = (currentSlide + 1) % slides.length;
-
-        // 3. Add active class to next slide
         slides[currentSlide].classList.add('active');
-    }, 5000); // 5000ms = 5 seconds
+    }, 5000); 
 }
 
 const menuToggle = document.querySelector('.menu-toggle');
